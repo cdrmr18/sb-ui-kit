@@ -11,7 +11,6 @@ export default {
 export const Quest = {
   args: {
     title: "Install the CareerOS Chrome Extension",
-    contentText:
-      "Unlock the superpowers of CareerOS with our Chrome Extension. This plugin lets you save companies, contacts, and jobs from Linkedin and other job boards. It also lets you access our messaging template and send...",
+    type: "install_extension",
   },
 };
