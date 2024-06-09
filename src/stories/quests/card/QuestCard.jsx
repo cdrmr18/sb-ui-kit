@@ -1,6 +1,6 @@
 import React from "react";
 import { BsDownload } from "react-icons/bs";
-import { BsArrowUpRightCircle } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import "./questCard.scss";
 
 export const QuestCard = ({ title, contentText, type }) => {
@@ -14,7 +14,8 @@ export const QuestCard = ({ title, contentText, type }) => {
         <p className="quest-card__content">{contentText}</p>
       </div>
       <div className="quest-card__action-wrapper">
-        <BsArrowUpRightCircle className="quest-card__action-icon" />
+        <BsArrowUpRight
+        className="quest-card__action-icon" />
       </div>
     </div>
   );

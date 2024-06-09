@@ -49,14 +49,21 @@
   }
 
   &__action-wrapper {
-    // flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #004850;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    padding: 4px, 0px, 4px, 0px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 4px 0 rgba(139,180,210, 0.15);
   }
 
   &__action-icon {
-    font-size: 32px;
-    color: gray;
+    font-size: 16px;
+    color: #004850;
+
   }
 }
