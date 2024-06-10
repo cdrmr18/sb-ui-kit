@@ -21,7 +21,11 @@ This project is a feature implementation for a Quest Container using React and S
 
 ## Installation
 
-1. **Clone the repository**:
+1. Ensure you have Node.js 18 in your environment.
+   ```bash
+   node -v
+   ```
+2. **Clone the repository**:
 
    SSH Setup
    ```bash
