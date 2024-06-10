@@ -10,7 +10,7 @@ import { VscCoffee } from "react-icons/vsc";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import "./questCard.scss";
 
-export const QuestCard = ({ type, company, due_date, job, contact }) => {
+export const QuestCard = ({ type, company, due_date, job, contact, ...props }) => {
   const formatDate = (dateString) => {
     const options = { day: "2-digit", month: "2-digit", year: "numeric" };
     return new Intl.DateTimeFormat("en-GB", options).format(
@@ -19,8 +19,8 @@ export const QuestCard = ({ type, company, due_date, job, contact }) => {
   };
 
   const truncateText = (text, limit) => {
-  return text.length > limit ? text.slice(0, limit) + '...' : text;
-};
+    return text.length > limit ? text.slice(0, limit) + "..." : text;
+  };
 
   const renderIcon = () => {
     const commonClass = "quest-card__logo";
