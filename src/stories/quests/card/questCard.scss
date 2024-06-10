@@ -70,15 +70,31 @@
     color: #004850;
   }
 
-  &__logo--install_extension {
+  &__logo--install_extension,
+  &__logo--submit_application {
     color: #FC47BE;
   }
 
-  &__logo-wrapper--install_extension {
+  &__logo-wrapper--install_extension,
+  &__logo-wrapper--submit_application  {
     background-color: #FFD6F6;
-    }
+  }
 
-  &__logo--type2 {
-    border-color: red;
+  &__logo--resolve-comment,
+  &__logo--save_first_company {
+    color: #808CD7;
+  }
+
+  &__logo-wrapper--resolve-comment,
+  &__logo-wrapper--save_first_company {
+    background-color: #DBE1FF;
+  }
+
+  &__logo-wrapper--schedule_coffee_chat  {
+    color: #2BBEB8;
+  }
+
+  &__logo-wrapper--schedule_coffee_chat {
+    background-color: #DDF7EC;
   }
 }
