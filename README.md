@@ -22,11 +22,13 @@ This project is a feature implementation for a Quest Container using React and S
 ## Installation
 
 1. **Clone the repository**:
+
    SSH Setup
    ```bash
     git clone git@github.com:cdrmr18/sb-ui-kit.git
     cd sb-ui-kit
-    ``
+    ```
+   
    OR
    
    URL Setup
