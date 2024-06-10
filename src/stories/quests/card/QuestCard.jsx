@@ -7,6 +7,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import { TfiCommentAlt } from "react-icons/tfi";
 import { BsBookmarkHeart } from "react-icons/bs";
 import { VscCoffee } from "react-icons/vsc";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 import "./questCard.scss";
 
 export const QuestCard = ({ type, company, due_date, job, contact }) => {
@@ -253,9 +254,19 @@ export const QuestCard = ({ type, company, due_date, job, contact }) => {
           <IoIosCheckmark />
           <IoCloseOutline />
         </div>
-        <div className="quest-card__action-wrapper">
-          <BsArrowUpRight className="quest-card__action-icon" />
-        </div>
+        {type != "install_extension" && (
+          <div className="quest-card__action-wrapper">
+            <BsArrowUpRight className="quest-card__action-icon" />
+          </div>
+        )}
+        {type == "install_extension" && (
+          <div className="quest-card__install-wrapper">
+            <div className="quest-card__install-icon">
+              <span>Install</span>
+              <BsBoxArrowUpRight />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

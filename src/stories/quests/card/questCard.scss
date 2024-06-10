@@ -51,6 +51,29 @@
     box-shadow: 0 4px 4px 0 rgba(139,180,210, 0.15);
   }
 
+  &__install-wrapper {
+    background-color: #004850;
+    padding: 4px 8px;
+    width: 73px;
+    height: 28px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(139,180,210, 0.10);
+  }
+
+  &__install-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #FFF;
+
+    span {
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      margin-right: 4px;
+    }
+  }
+
   &__logo {
     font-size: 16px;
   }
