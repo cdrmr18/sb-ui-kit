@@ -22,17 +22,25 @@ This project is a feature implementation for a Quest Container using React and S
 ## Installation
 
 1. **Clone the repository**:
-    ```bash
+   SSH Setup
+   ```bash
+    git clone git@github.com:cdrmr18/sb-ui-kit.git
+    cd sb-ui-kit
+    ``
+   OR
+   
+   URL Setup
+   ```bash
     git clone https://github.com/cdrmr18/sb-ui-kit.git
     cd sb-ui-kit
-    ```
+   ```
 
-2. **Install dependencies**:
+3. **Install dependencies**:
     ```bash
     npm install
     ```
 
-3. **Run Storybook**:
+4. **Run Storybook**:
     ```bash
     npm run storybook
     ```
