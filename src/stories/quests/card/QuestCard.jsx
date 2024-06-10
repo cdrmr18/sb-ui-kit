@@ -17,6 +17,10 @@ export const QuestCard = ({ type, company, due_date, job, contact }) => {
     );
   };
 
+  const truncateText = (text, limit) => {
+  return text.length > limit ? text.slice(0, limit) + '...' : text;
+};
+
   const renderIcon = () => {
     const commonClass = "quest-card__logo";
     switch (type) {
@@ -227,18 +231,24 @@ export const QuestCard = ({ type, company, due_date, job, contact }) => {
   };
 
   const content = renderContent();
+  const icon = renderIcon();
+
   return (
     <div className={`quest-card`}>
       <div
         className={`quest-card__logo-wrapper quest-card__logo-wrapper--${type} `}
       >
-        {renderIcon()}
+        {icon}
       </div>
       <div className="quest-card__content-wrapper">
         {content.header}
-        {content.text}
+        {content.text && (
+          <p className="quest-card__content">
+            {truncateText(content.text.props.children, 200)}
+          </p>
+        )}
       </div>
-      <div>
+      <div className="quest-card__icon-wrapper">
         <div className="quest-card__close">
           <IoIosCheckmark />
           <IoCloseOutline />

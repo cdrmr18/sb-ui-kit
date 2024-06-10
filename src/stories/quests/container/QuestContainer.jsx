@@ -17,7 +17,7 @@ export const QuestContainer = ({ title }) => {
   return (
     <div className="quest-container">
       <div className="quest-container__header">
-        <h3 className="quest-container__title">Quests</h3>
+        <h3 className="quest-container__title">{title}</h3>
         <BsInfoCircle className="quest-container__icon" />
       </div>
       <QuestList quests={quests} />
