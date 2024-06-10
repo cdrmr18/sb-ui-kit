@@ -5,8 +5,8 @@ import "./questList.scss";
 export const QuestList = ({ quests }) => {
     return (
     <div className="quest-list">
-      {quests.map((quest, index) => (
-        <QuestCard key={index} {...quest} />
+      {quests.map((quest) => (
+        <QuestCard key={quest.id} {...quest} />
       ))}
     </div>
   );

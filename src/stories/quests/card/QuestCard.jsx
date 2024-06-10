@@ -11,71 +11,48 @@ import "./questCard.scss";
 
 export const QuestCard = ({ type, company }) => {
   const renderIcon = () => {
+    const commonClass = "quest-card__logo";
     switch (type) {
       case "install_extension":
         return (
           <BsDownload
-            className={`quest-card__logo quest-card__logo--${type}`}
+            className={`${commonClass} ${commonClass}--${type}`}
           />
         );
       case "submit_application":
         return (
           <IoPaperPlaneOutline
-            className={`quest-card__logo quest-card__logo--${type}`}
+            className={`${commonClass} ${commonClass}--${type}`}
           />
         );
       case "resolve-comment":
         return (
           <TfiCommentAlt
-            className={`quest-card__logo quest-card__logo--${type}`}
+            className={`${commonClass} ${commonClass}--${type}`}
           />
         );
       case "save_first_company":
         return (
           <BsBookmarkHeart
-            className={`quest-card__logo quest-card__logo--${type}`}
+            className={`${commonClass} ${commonClass}--${type}`}
           />
         );
-      case "add_contact":
-        return (
-          <img
-            src={company.logo_url}
-            className="quest-card__logo--company"
-          />
-        );
-      case "send_linkedin_message":
-        return <img
-            src={company.logo_url}
-            className="quest-card__logo--company"
-          />;
-      case "send_linkedin_connection":
-        return <img
-            src={company.logo_url}
-            className="quest-card__logo--company"
-          />;
-      case "send_first_email":
-        return <img
-            src={company.logo_url}
-            className="quest-card__logo--company"
-          />;
-      case "add_new_contact":
-        return <img
-            src={company.logo_url}
-            className="quest-card__logo--company"
-          />;
       case "schedule_coffee_chat":
         return (
-          <VscCoffee className={`quest-card__logo quest-card__logo--${type}`} />
+          <VscCoffee className={`${commonClass} ${commonClass}--${type}`} />
         );
+      case "add_contact":
+      case "send_linkedin_message":
+      case "send_linkedin_connection":
+      case "send_first_email":
+      case "add_new_contact":
       case "send_follow_up_email":
         return <img
             src={company.logo_url}
-            className="quest-card__logo--company"
+            className={`${commonClass}--company`}
           />;
       default:
-        return (
-          <img src={company.logo_url} className="quest-card__logo--company" />
-        );
+        return null
     }
   };
   return (

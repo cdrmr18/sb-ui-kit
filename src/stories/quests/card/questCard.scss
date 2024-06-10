@@ -7,6 +7,16 @@
   border-radius: 8px;
   box-shadow: 0 0 4px 1px rgba(151, 71, 255, 0.15);
   padding: 16px;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 2px solid #ECF0FF;
+
+    .quest-card__close {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
   &__logo-wrapper {
     display: flex;
@@ -39,6 +49,9 @@
   &__close {
     display: flex;
     justify-content: end;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s ease-in-out;
     font-size: 24px;
     margin-bottom: 8px;
     color: #6F7979;
