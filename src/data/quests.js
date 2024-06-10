@@ -133,7 +133,7 @@ export const questsData = [
       id: "9",
       name: "Facebook",
       logo_url:
-        "https://storage.googleapis.com/student-app-documents/company_logos/facebook.png",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png",
       linkedin_url: "https://www.linkedin.com/company/facebook",
     },
     contact: {

@@ -9,7 +9,7 @@ import { BsBookmarkHeart } from "react-icons/bs";
 import { VscCoffee } from "react-icons/vsc";
 import "./questCard.scss";
 
-export const QuestCard = ({ title, type }) => {
+export const QuestCard = ({ type, company }) => {
   const renderIcon = () => {
     switch (type) {
       case "install_extension":
@@ -38,26 +38,44 @@ export const QuestCard = ({ title, type }) => {
         );
       case "add_contact":
         return (
-          <p>img</p>
+          <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />
         );
       case "send_linkedin_message":
-        return <p>img</p>;
+        return <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />;
       case "send_linkedin_connection":
-        return <p>img</p>;
+        return <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />;
       case "send_first_email":
-        return <p>img</p>;
+        return <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />;
       case "add_new_contact":
-        return <p>img</p>;
+        return <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />;
       case "schedule_coffee_chat":
         return (
           <VscCoffee className={`quest-card__logo quest-card__logo--${type}`} />
         );
       case "send_follow_up_email":
-        return (
-          <p>img</p>
-        );
+        return <img
+            src={company.logo_url}
+            className="quest-card__logo--company"
+          />;
       default:
-        return null;
+        return (
+          <img src={company.logo_url} className="quest-card__logo--company" />
+        );
     }
   };
   return (

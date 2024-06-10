@@ -65,6 +65,12 @@
     box-shadow: 0 4px 4px 0 rgba(139,180,210, 0.15);
   }
 
+  &__logo--company {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+
   &__action-icon {
     font-size: 16px;
     color: #004850;
