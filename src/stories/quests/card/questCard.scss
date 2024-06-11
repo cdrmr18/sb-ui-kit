@@ -106,6 +106,12 @@
     color: #6F7979;
     line-height: 20px;
     margin: 8px 0;
+
+    span {
+      text-decoration: underline;
+      margin-left: 4px;
+      text-underline-offset: 3px;
+    }
   }
 
   &__logo--company {

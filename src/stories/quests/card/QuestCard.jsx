@@ -131,7 +131,8 @@ export const QuestCard = ({ type, company, due_date, job, contact, ...props }) =
             <p className="quest-card__content">
               Get unique insights from your new contact by scheduling an
               informational interview with them. Make sure to use our
-              underline-coffee chat tips-underline to prepare for your meeting.
+              <span>coffee chat tips</span> to prepare for your
+              meeting.
             </p>
           ),
         };
