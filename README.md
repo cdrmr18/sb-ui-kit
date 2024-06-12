@@ -93,8 +93,5 @@ src/
 **Props**:
 - `quests` (array): An array of quest objects.
 
-## Styling
-
-
 ## Mock Data
 The data/quests.js file contains the mocked data for the quests. This data is used to simulate the API response for the /quests endpoint.
